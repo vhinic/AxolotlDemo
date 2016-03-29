@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.studio_terra.axolotldemo.GroupFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+
+        <ScrollView
+            android:id="@+id/aliceScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:layout_above="@+id/aliceEditText"
+            android:padding="4dip"
+            android:background="@drawable/border"
+            android:scrollbars="vertical">
+            <TextView
+                android:id="@+id/aliceTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alice" />
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/aliceEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:hint="Enter some text..."
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/aliceSendButton" />
+
+        <ImageButton
+            android:id="@+id/aliceSendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_send" />
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_vertical_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+
+        <ScrollView
+            android:id="@+id/bobScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bobEditText"
+            android:padding="4dip"
+            android:background="@drawable/border"
+            android:scrollbars="vertical">
+            <TextView
+                android:id="@+id/bobTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:hint="Bob" />
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/bobEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:hint="Enter some text..."
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/bobSendButton" />
+
+        <ImageButton
+            android:id="@+id/bobSendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_send" />
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_vertical_margin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+
+        <ScrollView
+            android:id="@+id/charlieScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/charlieEditText"
+            android:padding="4dip"
+            android:background="@drawable/border"
+            android:scrollbars="vertical">
+            <TextView
+                android:id="@+id/charlieTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:hint="Charlie" />
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/charlieEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:hint="Enter some text..."
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/charlieSendButton" />
+
+        <ImageButton
+            android:id="@+id/charlieSendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_send" />
+
+    </RelativeLayout>
+
+</LinearLayout>
