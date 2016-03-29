@@ -1,2 +1,2 @@
 # AxolotlDemo
-Axolotl (now Signal) Android Demo App
+Axolotl (now Signal) Library Android Demo App
